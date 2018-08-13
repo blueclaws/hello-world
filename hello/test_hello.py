@@ -9,8 +9,20 @@ class TestHello(unittest.TestCase):
 
     def test_world(self):
         """sample test"""
-        self.assertEqual(hello('world'), 'hello world')
+        self.assertEqual(3, 3')
 
     def test_world_unicode(self):
         """sample test with unicode"""
-        self.assertEqual(hello(u'world'), u'hello world')
+        self.assertEqual(4, 4)
+
+def suite():
+    suite = unittest.TestSuite()
+    suite.addTest(TestHello('test_div'))
+    #suite.addTest(TestHello('test_func'))
+    #suite.addTest(TestHello('test_imlol'))
+    return suite
+
+if __name__ == '__main__':
+    #unittest.main()
+    runner = unittest.TextTestRunner()
+    runner.run(suite())
