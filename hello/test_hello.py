@@ -9,7 +9,7 @@ class TestHello(unittest.TestCase):
 
     def test_world(self):
         """sample test"""
-        self.assertEqual(3, 3')
+        self.assertEqual(3, 3)
 
     def test_world_unicode(self):
         """sample test with unicode"""
